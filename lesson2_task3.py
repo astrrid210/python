@@ -15,6 +15,8 @@ else:
 
 # через list
 list_month = int(input('Введите месяц в виде целого числа от 1 до 12: '))
+if list_month == 12:
+    list_month = 1
 season_list = ['Зима', 'Весна', 'Лето', 'Осень']
 define_season = int(list_month / 3)
 if list_month >= 13 or list_month <= 0:
